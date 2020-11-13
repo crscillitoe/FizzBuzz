@@ -1172,4 +1172,6 @@ def advanced_fizz_buzz(n):
         to_return += 'zizz'
     if n % 4211 == 0:
         to_return += 'zmudz'
+    if to_return == "":
+        return str(n)
     return to_return
