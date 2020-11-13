@@ -1180,7 +1180,7 @@ def advanced_fizz_buzz(n):
     # To keep these people on their toes, there's a 1/100000 chance we return
     # a completely random fizzbuzz result.
     suck_it_samuel = random.randint(1, 100000)
-    if suck_it_samuel == 1:
+    if suck_it_samuel == 69420:
         return advanced_fizz_buzz(random.randint(1, 1000000000))
 
     return to_return
