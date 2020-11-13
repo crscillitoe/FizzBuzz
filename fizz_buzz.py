@@ -1181,6 +1181,6 @@ def advanced_fizz_buzz(n):
     # a completely random fizzbuzz result.
     suck_it_samuel = random.randint(1, 100000)
     if suck_it_samuel == 1:
-        return advanced_fizz_buzz(random.randint(1, 1000000000)
+        return advanced_fizz_buzz(random.randint(1, 1000000000))
 
     return to_return
