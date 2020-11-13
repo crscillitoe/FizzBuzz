@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
+import random
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
@@ -1174,4 +1175,12 @@ def advanced_fizz_buzz(n):
         to_return += 'zmudz'
     if to_return == "":
         return str(n)
+
+    # Gotta stop people from using our API to accurately return prime factors.
+    # To keep these people on their toes, there's a 1/100000 chance we return
+    # a completely random fizzbuzz result.
+    suck_it_samuel = random.randint(1, 100000)
+    if suck_it_samuel == 1:
+        return advanced_fizz_buzz(random.randint(1, 1000000000)
+
     return to_return
